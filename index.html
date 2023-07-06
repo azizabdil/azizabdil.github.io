@@ -1,48 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your CV</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha2/dist/css/bootstrap.min.css">
+  <title>Bootstrap 5 Landing Page</title>
 </head>
-
 <body>
-  <!-- Your CV content goes here -->
-  <div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <h1>Your Name</h1>
-      <p>Email: yourname@example.com</p>
-      <p>Phone: 123-456-7890</p>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Your Brand</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="col-md-6">
-      <img src="path/to/your/profile-picture.jpg" alt="Profile Picture" class="img-fluid">
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container text-center">
+      <h1 class="display-4">Welcome to Your Website</h1>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis, est vitae aliquam consectetur, felis urna lobortis erat, nec mollis lectus velit nec mauris.</p>
+      <a href="#" class="btn btn-primary btn-lg">Get Started</a>
     </div>
-  </div>
+  </section>
 
-  <h2>Summary</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices, lorem sed aliquam auctor, nunc nunc
-    elementum enim, vitae condimentum tortor est id lacus.</p>
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Feature 1</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis, est vitae aliquam consectetur, felis urna lobortis erat, nec mollis lectus velit nec mauris.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Feature 2</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis, est vitae aliquam consectetur, felis urna lobortis erat, nec mollis lectus velit nec mauris.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Feature 3</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis, est vitae aliquam consectetur, felis urna lobortis erat, nec mollis lectus velit nec mauris.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h2>Education</h2>
-  <ul>
-    <li>Bachelor's Degree, Major in Computer Science, University Name, Year</li>
-    <li>High School Diploma, School Name, Year</li>
-  </ul>
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white text-center py-3">
+    <div class="container">
+      <span>&copy; 2023 Your Company. All rights reserved.</span>
+    </div>
+  </footer>
 
-  <h2>Experience</h2>
-  <ul>
-    <li>Job Title, Company Name, Year-Present</li>
-    <li>Job Title, Company Name, Year-Year</li>
-  </ul>
-
-  <!-- Add more sections as needed -->
-
-</div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
